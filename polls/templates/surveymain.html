@@ -1,0 +1,27 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+  <main role="main" class="container">
+    <div class="jumbotron">
+
+      <div>
+        <H3>NO.1</H3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vwKvYFVAMkA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+    </br></br></br>
+
+      <div>
+        <H3>NO.2</H3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZEzO2KoJq2A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </br></br></br>
+      <h1>YOUTUVEMIND</h1>
+      <p class="lead">Youtube's influence as a media is enormous. Youtube is known to have an operational algorithm that analyzes users' propensity and provides appropriate content. But wouldn't this recommended algorithm be intentionally creating a user's propensity? The study is actually aimed at checking whether YouTube algorithms affect the formation of propensity in users' personal thoughts.</p>
+      <a class="btn btn-lg btn-primary" href="{% url 'polls:index' %}" role="button">START! &raquo;</a>
+    </div>
+  </main>
+
+{% endblock %}
+
+  
