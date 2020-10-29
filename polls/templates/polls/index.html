@@ -1,0 +1,47 @@
+{% load static %}
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/cover.css' %}">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+</head>
+  
+  <body class="text-left">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <a class="navbar-brand" href="{% url 'index' %}">YOUTUVEMIND</a>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link" href="{% url 'about' %}" >About</a>
+          <a class="nav-link" href="#">Git</a>
+        </nav>
+      </div>
+    </header>
+
+  <div>
+    <p class="lead">All questions must be answered between the number 1 to 7, ranging from strongly disagree, disagree, somewhat disagree, neutral, somewhat agree, agree, strongly agree.</p>
+  </br></br>
+    <h1>Question</h1>
+  </div>
+</br></br></br>
+<div class="text-left">
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+</div>
+
+
+
+<footer class="mastfoot mt-auto">
+  <div class="inner">
+    <p>Copyright@2020 <a href="#">YOUTUVEMIND</a>, by <a href=#">Junsung</a>.</p>
+  </div>
+</footer>
+</div>
+</body>
