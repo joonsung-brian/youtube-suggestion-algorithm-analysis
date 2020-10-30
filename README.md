@@ -6,6 +6,11 @@ The website was launched to study the impact of biased perception of media repor
 #Learn the model1 (image)
 #Learn models2 (Voice)
 
+#Preparing data
+To analyze YouTube videos, FFmpeg program to extract images is installed in a virtual environment and images are extracted.
+Runs a labeling program to label all extracted images.
+Download github.com/AlexeyAB/darknet for post-analysis of image recognition algorithms.
+
 #Generating a dataset
 After image labeling, Darknet framework prepares four files for training.
 -labeled_data.data
