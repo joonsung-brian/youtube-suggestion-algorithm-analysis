@@ -1,12 +1,10 @@
 # youtube-suggestion-algorithm-analysis
 The website was launched to study the impact of biased perception of media reports on fairness evaluation. In particular, YouTube is one of the biggest media, with more than 2 billion users worldwide. Because of its huge influence on society, YouTube should also seriously consider the fact that it can favor users' decisions simply with algorithms to increase advertising exposure. This study began with these concerns.
 
-
 #Preparing data
 #Generating a dataset
 #Learn the model1 (image)
 #Learn models2 (Voice)
-
 
 #Generating a dataset
 After image labeling, Darknet framework prepares four files for training.
@@ -21,14 +19,12 @@ creating-train-and-test-txt-files.py
 creating-files-data-and-names.py
 Each file is routed and saved as a txt file
 
-
 #Learn the model1 (image)
 Install Darknet and check its operation.
 Enter a command and recognize the image of the prepared video.
 Basic image prediction is good.
 Image recognition worked successfully but took a long time.
 As a basic image detection for each frame, it shows the probability of the detection, or performance.
-
 
 #Learn models2 (Voice)
 I analyzed the image, but I also had to analyze the voice data on YouTube.
