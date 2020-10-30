@@ -36,7 +36,7 @@ I analyzed the image, but I also had to analyze the voice data on YouTube.<br>
 Found a technique for analyzing voice data.<br>
 I was able to download algorithm data to understand simple voice commands.<br>
 
-Kagle conducted a compilation to analyze and recognize voice data sets.<br>
+Kaggle conducted a compilation to analyze and recognize voice data sets.<br>
 However, 3.5GB input data takes a lot of time to learn, so it's impossible.<br>
 
 Speech2Text Approach was available.<br>
